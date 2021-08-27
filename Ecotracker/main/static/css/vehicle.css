@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../resources/bold.otf');
+  }
+
+body{background-color: #Ebe6e3;
+}
+
+#carouselIndicators{
+    z-index: -1;
+    height: 85%;
+    width: 70%;
+    position: absolute;
+    top: 20%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    border-width: 12%;
+}
+  
+  .carousel .carousel-indicators .active {
+    z-index: -1;
+    background-color: rgba(70,70,70,.5);
+  }
+
+
+#vehicle{
+    z-index: 0;
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    top: 38%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    max-height: 400%;
+    --poster-color: transparent;
+}
+
+main{
+    width: 100vw;
+    height: 34vw;
+    position: absolute;
+    z-index: -1;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fade 2.25s;
+    -webkit-animation: fade 2.25s;
+    -moz-animation: fade 2.25s;
+    -o-animation: fade 2.25s;
+    -ms-animation: fade 2.25s;
+}
+@keyframes fade {
+    0% {opacity:0;}
+    50% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.test{
+    z-index: 0;
+    width: 99%;
+    height: 95%;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#model{
+    z-index: 0;
+    margin: 10%;
+    position: absolute;
+    top: 10%;
+    width: 30%;
+    height: 5vw; 
+}
+
+.card{
+    z-index: 0;
+    width: 22vw;
+    height: 23vw;
+    position: absolute;
+    top: 43.5%;
+    left: 72.5%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.card-body{
+    z-index: 0;
+    width: 20vw;
+    height: 15vw;
+    position: absolute;
+    top: 50%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-control-prev-icon {
+    z-index: -2;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+    z-index: -2;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../resources/bold.otf');
+  }
+  
+@font-face {
+  font-family: 'kayak';
+  src: url('../resources/Kayak Sans Light.otf');
+}
+
+h1{
+    font-family: 'MyWebFont';
+}
+
+body{
+    background-color: #A8f3d9;
+}
+
+.p1{
+    size: +7;
+}
+
+model-viewer{
+    width: 30vw;
+    height: 75vw;
+    position: absolute;
+    top: 70%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: hidden;
+    --poster-color: transparent;
+}
+
+.section{
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.pad{
+    background-color: #A8f3d9;
+}
+
+strong{
+    font-weight: 100;
+}
+
+font{
+    font-family: 'MyWebFont';
+}
